@@ -1,6 +1,5 @@
 # Detección de Veracidad en Declaraciones Políticas
 
-Valentina Ghan
 
 ## 1. Introducción
 
