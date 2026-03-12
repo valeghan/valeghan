@@ -1,37 +1,44 @@
 # Detección de Veracidad en Declaraciones Políticas
 
-## Descripción
+Valentina Ghan
 
-Este proyecto desarrolla un modelo de clasificación para predecir el
-nivel de veracidad de declaraciones políticas utilizando el LIAR
-Dataset, un conjunto de afirmaciones verificadas por PolitiFact.
+## 1. Introducción
 
-El problema se aborda mediante técnicas de procesamiento de lenguaje
-natural (NLP), transformando el texto con TF-IDF y entrenando distintos
-modelos de clasificación como Logistic Regression, SVM y Naive Bayes.
+La creciente circulación de información en medios digitales y redes sociales ha incrementado la exposición a contenido engañoso o desinformación. En el ámbito político, la verificación manual de declaraciones resulta costosa y difícil de escalar.
 
-El modelo final basado en TF-IDF y Logistic Regression mostró el mejor
-desempeño, evidenciando el potencial de las técnicas de NLP para apoyar
-la detección automática de desinformación.
+Este proyecto busca desarrollar un modelo de clasificación automática capaz de predecir el nivel de veracidad de declaraciones políticas utilizando técnicas de procesamiento de lenguaje natural (NLP).
 
-## Tecnologías utilizadas
+## 2. Visión general de la solución
 
--   Python
--   Pandas
--   Scikit-learn
--   NLP (TF-IDF)
--   Matplotlib
--   Seaborn
+La solución se basa en la aplicación de modelos de aprendizaje automático para clasificar declaraciones políticas según su veracidad. Para representar el contenido textual se utiliza la técnica TF-IDF, que permite transformar el texto en vectores numéricos que capturan la relevancia de las palabras dentro del corpus.
 
-## Estructura del repositorio
+Sobre estas representaciones se entrenan distintos modelos de clasificación supervisada, incluyendo Logistic Regression, Support Vector Machines (SVM) y Naive Bayes.
 
--   data/ → dataset LIAR\
--   notebooks/ → análisis y modelado\
--   models/ → modelos entrenados\
--   results/ → métricas y evaluación
+## 3. Dataset
 
-## Objetivo académico
+El proyecto utiliza el **LIAR Dataset**, un conjunto de datos ampliamente utilizado en investigación sobre detección de desinformación. El dataset contiene miles de declaraciones políticas verificadas por la organización PolitiFact y clasificadas en distintas categorías de veracidad.
 
-Proyecto realizado en el marco de la especialización en **Análisis de
-Datos e Inteligencia Artificial**, enfocado en la aplicación de NLP para
-clasificación de texto.
+Cada registro incluye el texto de la declaración y variables contextuales como el autor de la afirmación, su afiliación política y el contexto en que fue realizada.
+
+## 4. Metodología
+
+El pipeline de modelado incluye las siguientes etapas:
+
+- Limpieza y preprocesamiento del texto
+- Tokenización y normalización
+- Transformación mediante TF-IDF
+- Entrenamiento de modelos de clasificación
+
+Para evaluar el desempeño se utilizan métricas estándar de clasificación como precisión, recall y F1-score. También se aplica validación cruzada para asegurar la robustez de los resultados.
+
+## 5. Resultados
+
+Entre los modelos evaluados, **Logistic Regression combinada con TF-IDF** mostró el mejor equilibrio entre precisión y recall. El modelo logró identificar correctamente gran parte de las declaraciones engañosas manteniendo un nivel adecuado de precisión en las predicciones.
+
+Estos resultados evidencian que las técnicas de procesamiento de lenguaje natural pueden utilizarse para apoyar procesos de detección automatizada de desinformación.
+
+## 6. Conclusiones
+
+El proyecto demuestra que los métodos de machine learning aplicados a texto permiten desarrollar herramientas capaces de analizar la veracidad de afirmaciones políticas.
+
+Aunque estos modelos no sustituyen el fact-checking humano, pueden funcionar como sistemas de apoyo que ayuden a priorizar contenido potencialmente engañoso para su posterior verificación.
