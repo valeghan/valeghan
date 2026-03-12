@@ -1,3 +1,5 @@
+valeghan.github.io
+
 # Portfolio de Proyectos – Data Science & Inteligencia Artificial
 
 Este repositorio reúne proyectos desarrollados durante mi especialización en **Análisis de Datos e Inteligencia Artificial**, donde aplico técnicas de machine learning, procesamiento de lenguaje natural y visión por computadora para resolver distintos problemas de datos.
