@@ -173,5 +173,6 @@ La principal limitación del sistema es que opera sobre recortes pre-anotados y 
 
 ---
 
-*Código disponible: `Cascos_editado.ipynb` (ejecutable en Google Colab)*  
+*Código disponible: `Safety Helmet.ipynb` (ejecutable en Google Colab)*  
 *Dataset: [https://www.kaggle.com/datasets/andrewmvd/hard-hat-detection](https://www.kaggle.com/datasets/andrewmvd/hard-hat-detection)*
+
